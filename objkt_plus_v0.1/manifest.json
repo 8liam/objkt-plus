@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "OBJKT+",
+    "version": "0.1",
+     "browser_action": {
+     },
+     "icons": {
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "128":"images/icon.png"
+       },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://objkt.com/*"
+        ],
+        "js": ["js/jquery-3.6.0.min.js", "js/background.js"]
+      }
+    ]
+  }
